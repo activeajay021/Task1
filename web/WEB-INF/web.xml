@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <servlet>
+        <servlet-name>Servlet-JSP Communication Demo</servlet-name>
+        <servlet-class>ak.com.ServletDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet-JSP Communication Demo</servlet-name>
+        <url-pattern>/sayhello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletContoller</servlet-name>
+        <servlet-class>ak.com.ServletContoller</servlet-class>
+            <init-param>  
+       
+          <param-name>qid</param-name>  
+          <param-value>1</param-value>  
+        </init-param> 
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContoller</servlet-name>
+        <url-pattern>/ServletContoller</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet>
+        <servlet-name>Correction</servlet-name>
+        <servlet-class>ak.com.Correction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Correction</servlet-name>
+        <url-pattern>/Correction</url-pattern>
+    </servlet-mapping> 
+    
+      <servlet>
+        <servlet-name>ServletContoller1</servlet-name>
+        <servlet-class>ak.com.ServletContoller1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContoller1</servlet-name>
+        <url-pattern>/ServletContoller1</url-pattern>
+    </servlet-mapping> 
+    
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
